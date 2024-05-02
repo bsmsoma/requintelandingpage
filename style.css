@@ -1,0 +1,138 @@
+@font-face {
+    font-family: 'Futura PT Book';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Book'), url(fonts/FuturaCyrillicBook.woff) format('woff');
+}
+@font-face {
+    font-family: 'Futura PT Heavy';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Futura PT Heavy'), url(fonts/FuturaCyrillicHeavy.woff) format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    --defaultFont: "Futura PT Book";
+    --titleFont: "Futura PT Heavy";
+    --borderColor: #ddd;
+}
+main {
+    max-width: 1200px;
+    min-width: 320px;
+    padding: 75px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+header {
+    max-width: 1200px;
+    min-width: 320px;
+    padding: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--defaultFont);
+    color: black;
+}
+.page-divider {
+    width: 90%;
+    margin: 6px auto;
+    border-bottom: 1px solid var(--borderColor);
+}
+
+.logo a {
+    padding: 10px;
+    font-family: var(--titleFont);
+    font-size: 2em;
+    text-decoration: none;
+    color: inherit;
+}
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu a {
+    text-decoration: none;
+    color: black;
+}
+.menu li {
+    margin: 10px;
+    list-style: none;
+    padding: 6px;
+    border-bottom: 2px solid transparent;
+}
+
+.menu li:hover {
+    border-bottom: 2px solid var(--borderColor);
+}
+
+
+.container {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+}
+.card {
+    margin-top: 6px;
+    margin-left: 6px;
+    width: 308px;
+    height: 450px;
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+}
+.products {
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.products:hover {
+    opacity: 90%;
+}
+img {
+    border-radius: 4px;
+    box-shadow: 1px 2px 3px var(--borderColor);
+}
+label {
+    font-family: var(--defaultFont);
+    font-size: 1.3em;
+    padding: 6px;
+}
+.price {
+    margin-top: 5px;
+    margin-left: 5px;
+    font-family: var(--defaultFont);
+}
+footer {
+    font-family: var(--defaultFont);
+    color: black;
+    text-align: center;
+    padding: 8px;
+    position: relative;
+    bottom: 0;
+}
+
+@media (max-width: 500px) {
+    header {
+        justify-content: center;
+    }
+
+    main {
+        padding: 20px; /* Ajuste o preenchimento para um valor menor */
+    }
+
+    .container {
+        justify-content: center;
+    }
+
+    footer {
+        text-align: center;
+    }
+}
