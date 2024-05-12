@@ -45,7 +45,7 @@ header {
 }
 .page-divider {
     width: 90%;
-    margin: 6px auto;
+    margin: 10px auto;
     border-bottom: 1px solid var(--borderColor);
 }
 
@@ -122,6 +122,48 @@ footer {
     padding: 8px;
     position: relative;
     bottom: 0;
+}
+.aboutus {
+    font-family: var(--defaultFont);
+    text-indent: 16px;
+    font-size: 1.2em;
+}
+.aboutus p {
+    margin: 10px auto;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    font-family: var(--defaultFont);
+    font-size: 1.2em;
+
+}
+.contacts a {
+    font-size: 1.2rem;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 3px;
+}
+.contacts a:hover {
+    text-decoration: underline;
+
+}
+.contacts input{
+    width: 37%;
+    height: 20px;
+    margin-top: 10px;
+    outline: black;
+}
+button {
+    display: block;
+    margin-top: 10px;
+    height: 30px;
+    width: 60px;
+    padding: 7px;
+    
 }
 
 @media (max-width: 500px) {
