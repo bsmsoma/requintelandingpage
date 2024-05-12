@@ -1,25 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Requinte - Aluguel de Trajes</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <div class="logo"><a href="index.html">Requinte</a></div>
+    <header id="header">
+        <div class="logo"><a href="index.html"><img src="imagens/diamond-ring.png.png" alt="logo"
+                    id="header-img">Requinte</a></div>
         <nav>
             <ul class="menu">
-                <li><a href="">CONTATO</a></li>
-                <li><a href="">PRODUTOS</a></li>
-                <li><a href="">SOBRE NÓS</a></li>
+                <li><a href="#Contacts">CONTATO</a></li>
+                <li><a href="#Produtos">PRODUTOS</a></li>
+                <li><a href="#Sobrenos">SOBRE NÓS</a></li>
             </ul>
         </nav>
     </header>
     <div class="page-divider"></div>
     <main>
-        <label for="">Produtos</label>
+        <label id="Produtos" for="">Produtos</label>
         <section class="product">
             <div class="container">
                 <div class="card">
@@ -39,16 +42,43 @@
                     <p class="price">Preço: 379,90</p>
                 </div>
                 <div class="card">
-                    <div class="products"><img src="imagens/Noiva.png" alt="a bride"></div>
+                    <div class="products"><img src="imagens/A bride with hat.png" alt="a bride"></div>
                     <p class="price">Preço: R$ 2499,00</p>
                 </div>
                 <div class="card">
-                    <div class="products"><img src="imagens/Noiva.png" alt="a bride"></div>
-                    <p class="price">Preço: R$ 2499,00</p>
+                    <div class="products"><img src="imagens/Vestido verde.png" alt="a bride"></div>
+                    <p class="price">Preço: R$ 499,00</p>
                 </div>
-                
-
             </div>
+        </section>
+        <div class="page-divider"></div>
+        <section id="Sobrenos">
+            <label for="Sobrenos">Sobre Nós</label>
+            <p>Com uma trajetória de mais de uma década de refinamento e dedicação no exigente cenário de Palmas, somos
+                uma referência incontestável no universo das vestimentas para ocasiões especiais. Especializados em
+                trajes para festas de formatura, bailes, debutantes e casamentos, elevamos cada evento ao ápice do
+                requinte e da elegância.</p>
+
+            <p>Desde o nosso estabelecimento, há mais de nove anos, temos pautado nossa atuação na excelência,
+                oferecendo uma ampla gama de serviços que abrangem locação, venda e até mesmo a confecção de peças
+                exclusivas, meticulosamente criadas para complementar a singularidade de cada cliente.</p>
+
+            <p>Nossa missão transcende o simples fornecimento de vestimentas; buscamos, incansavelmente, superar as
+                expectativas, proporcionando uma experiência verdadeiramente memorável. Com um olhar atento aos detalhes
+                e um compromisso inabalável com a qualidade, cada peça que criamos ou disponibilizamos reflete o nosso
+                comprometimento em tornar cada celebração um verdadeiro espetáculo de bom gosto e sofisticação.</p>
+        </section>
+        <div class="page-divider"></div>
+        <section class="#Contacts">
+            <label for="Contato">Contato</label>
+            <form action="https://www.freecodecamp.com/email-submit" method="post">
+                <p>Palmas - Tocantins</p>
+                <p>110 Norte Avenida Juscelino Kubitschek n.22 sl. 03</p>
+                <a href="tel:556332152474">(63)3215-2474</a>
+                <a href="mailto:requintenoivs@gmx.com">requintenoivas@gmx.com</a>
+                <p>Ou insira seu email e entraremos em contato</p>
+                <input type="email" name="email" id="" placeholder="Coloque seu email aqui">
+            </form>
         </section>
     </main>
     <div class="page-divider"></div>
@@ -56,4 +86,5 @@
         <p>Site desenvolvido por <i>Brunno Mota</i></p>
     </footer>
 </body>
+
 </html>
