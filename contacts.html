@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Requinte - Contato</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header id="header">
+        <div class="logo"><a href="index.html"><img src="imagens/diamond-ring.png.png" alt="logo"
+                    id="header-img">Requinte</a></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="./index.html">HOME</a></li>
+                <li><a href="./index.html">PRODUTOS</a></li>
+                <li><a href="./index.html">SOBRE NÓS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="page-divider"></div>
+    <main>
+        <form action="post">
+            <h3>Preencha o formulário para solicitar atendimento</h3>
+            <div class="page-divider"></div>
+            <label for="name">Nome:</label>
+            <input type="text" name="name" id="name" placeholder="Preencha seu nome">
+            <label for="lastanme">Sobrenome:</label>
+            <input type="text" name="lastname" id="lastName" placeholder="Preencha seu sobrenome">
+            <label for="email">E-mail:</label><input type="text" name="email" id="email"
+                placeholder="Preencha seu email">
+            <label for="phone">Telefone:</label><input type="text" name="phone" id="phone"
+                placeholder="(63) 9XXXX-XXXX" pattern="(?:(^\+\d{2})?)(?:([1-9]{2})|([0-9]{3})?)(\d{4,5})(\d{4})">
+            <label for="select">Qual o seu interesse?</label>
+            <select name="" id="select">
+                <option value="none">Selecione uma opção</option>
+                <option value="noivas">Vestidos de Noiva</option>
+                <option value="noivos">Ternos</option>
+                <option value="padrinhos">Ternos para padrinho</option>
+                <option value="daminhas">Vestidos de daminha</option>
+            </select>
+            <input type="button" value="Enviar" class="submitform">
+        </form>
+    </main>
+    <div class="page-divider"></div>
+    <footer>
+        <p>Site desenvolvido por <i>Brunno Mota</i></p>
+    </footer>
+</body>
+
+</html>

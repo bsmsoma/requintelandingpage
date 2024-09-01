@@ -4,6 +4,7 @@
     font-weight: normal;
     src: local('Futura PT Book'), url(fonts/FuturaCyrillicBook.woff) format('woff');
 }
+
 @font-face {
     font-family: 'Futura PT Heavy';
     font-style: normal;
@@ -18,6 +19,7 @@
     --titleFont: "Futura PT Heavy";
     --borderColor: #ddd;
 }
+
 main {
     max-width: 1200px;
     min-width: 320px;
@@ -38,11 +40,13 @@ header {
     font-family: var(--defaultFont);
     color: black;
 }
+
 #header-img {
     width: 50px;
     height: 50px;
     box-shadow: none;
 }
+
 .page-divider {
     width: 90%;
     margin: 10px auto;
@@ -56,15 +60,18 @@ header {
     text-decoration: none;
     color: inherit;
 }
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
 .menu a {
     text-decoration: none;
     color: black;
 }
+
 .menu li {
     margin: 10px;
     list-style: none;
@@ -86,6 +93,7 @@ header {
     margin-bottom: 50px;
 
 }
+
 .card {
     margin-top: 6px;
     margin-left: 6px;
@@ -94,27 +102,33 @@ header {
     border: 1px solid var(--borderColor);
     border-radius: 5px;
 }
+
 .products {
     margin-left: 5px;
     margin-top: 5px;
 }
+
 .products:hover {
     opacity: 90%;
 }
+
 img {
     border-radius: 4px;
     box-shadow: 1px 2px 3px var(--borderColor);
 }
+
 label {
     font-family: var(--defaultFont);
     font-size: 1.3em;
     padding: 6px;
 }
+
 .price {
     margin-top: 5px;
     margin-left: 5px;
     font-family: var(--defaultFont);
 }
+
 footer {
     font-family: var(--defaultFont);
     color: black;
@@ -123,11 +137,13 @@ footer {
     position: relative;
     bottom: 0;
 }
+
 .aboutus {
     font-family: var(--defaultFont);
     text-indent: 16px;
     font-size: 1.2em;
 }
+
 .aboutus p {
     margin: 10px auto;
 }
@@ -140,6 +156,7 @@ footer {
     font-size: 1.2em;
 
 }
+
 .contacts a {
     font-size: 1.2rem;
     display: block;
@@ -147,23 +164,62 @@ footer {
     color: black;
     padding: 3px;
 }
+
 .contacts a:hover {
     text-decoration: underline;
 
 }
-.contacts input{
+
+.contacts input {
     width: 37%;
     height: 20px;
     margin-top: 10px;
     outline: black;
 }
+
 button {
     display: block;
     margin-top: 10px;
     height: 30px;
     width: 60px;
     padding: 7px;
-    
+
+}
+
+/* FORMULÁRIOS CONTACTS */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 15px auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+h3 {
+    margin: 1rem auto;
+    font-family: "Montserrat", sans-serif;
+}
+
+form input {
+    font-family: "Montserrat", sans-serif;
+    border-radius: 5px;
+    height: 1.5rem;
+}
+
+
+form select {
+    font-family: "Montserrat", sans-serif;
+    margin: 4px auto;
+    width: 100%;
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+
+.submitform {
+    width: 50%;
+    margin: 16px auto;
+    padding: 0.9rem;
+    line-height: 2px;
 }
 
 @media (max-width: 500px) {
@@ -172,7 +228,7 @@ button {
     }
 
     main {
-        padding: 20px; /* Ajuste o preenchimento para um valor menor */
+        padding: 20px;
     }
 
     .container {
@@ -181,5 +237,21 @@ button {
 
     footer {
         text-align: center;
+    }
+
+    /* responsive web form */
+    form {
+        width: 100%;
+        margin: 8px auto;
+        font-family: "Montserrat", sans-serif;
+    }
+
+    h3 {
+        text-align: center;
+
+    }
+
+    form select {
+        width: 100%;
     }
 }
